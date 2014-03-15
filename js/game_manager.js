@@ -42,7 +42,7 @@ GameManager.prototype.setup = function () {
   this.won         = false;
   this.keepPlaying = false;
 
-  this.aim         = Math.ceil(Math.random()*20); 
+  this.aim         = Math.ceil(Math.random()*200); 
   document.querySelector(".title").textContent = this.aim;
   // Add the initial tiles
   this.addStartTiles();
