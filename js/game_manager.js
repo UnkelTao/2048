@@ -44,6 +44,7 @@ GameManager.prototype.setup = function () {
 
   this.aim         = Math.ceil(Math.random()*200); 
   document.querySelector(".title").textContent = this.aim;
+  document.querySelector(".aim-til").textContent = this.aim;
   // Add the initial tiles
   this.addStartTiles();
 
