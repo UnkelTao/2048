@@ -26,6 +26,7 @@ Grid.prototype.randomAvailableCell = function () {
   }
 };
 
+
 Grid.prototype.availableCells = function () {
   var cells = [];
 
@@ -36,6 +37,16 @@ Grid.prototype.availableCells = function () {
   });
 
   return cells;
+};
+
+Grid.prototype.getLagernum = function (num) {
+  var res = 0
+  for (var x = 0; x < this.size; x++) {
+    for (var y = 0; y < this.size; y++) {
+      if(this.cells[x][y] &&　this.cells[x][y].value > num) res = res+1;
+    }
+  }
+  return res;
 };
 
 // Call callback for every cell
@@ -82,3 +93,4 @@ Grid.prototype.withinBounds = function (position) {
   return position.x >= 0 && position.x < this.size &&
          position.y >= 0 && position.y < this.size;
 };
+
