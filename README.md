@@ -13,6 +13,6 @@
 ![](http://unkeltao.qiniudn.com/2048/IMG_2048.png)
 
 ###2048源码地址
-[改版](https://github.com/UnkelTao/2048/tree/master)
+[改版](https://github.com/UnkelTao/2048/tree/gh-pages)
 [2048原版](https://github.com/gabrielecirulli/2048)
 
